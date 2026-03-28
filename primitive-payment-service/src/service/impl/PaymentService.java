@@ -55,7 +55,7 @@ public class PaymentService implements PaymentServiceInterface {
                 bill.setState(BillStatus.PAID);
 
                 paymentRepo.save(new Payment(
-                        System.currentTimeMillis(),
+                        System.nanoTime(),
                         bill.getAmount(),
                         LocalDate.now(),
                         PaymentStatus.PROCESSED,

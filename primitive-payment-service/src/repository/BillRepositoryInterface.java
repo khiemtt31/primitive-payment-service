@@ -8,4 +8,5 @@ public interface BillRepositoryInterface {
     Bill findById(Long id);
     List<Bill> findAll();
     void save(Bill bill);
+    void delete(Long id);
 }

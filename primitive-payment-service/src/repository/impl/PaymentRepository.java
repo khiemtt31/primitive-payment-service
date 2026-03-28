@@ -21,7 +21,14 @@ public class PaymentRepository implements PaymentRepositoryInterface {
     @Override
     public List<Payment> findAll() {
         return database.values().stream()
-                .sorted(Comparator.comparing(Payment::getPaymentDate))
+                .sorted(Comparator.comparing(Payment::getId))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Payment> findByBillId(Long id) {
+        return database.values().stream()
+                .filter(payment -> id.equals(payment.getBillId()))
                 .collect(Collectors.toList());
     }
 }

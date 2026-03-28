@@ -25,4 +25,7 @@ public class BillRepository implements BillRepositoryInterface {
     public void save(Bill bill) {
         database.put(bill.getId(), bill);
     }
+
+    @Override
+    public void delete(Long id) { database.remove(id); }
 }

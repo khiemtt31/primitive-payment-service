@@ -1,0 +1,31 @@
+name: Java CLI Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: oracle
+          java-version: 21
+
+      - name: Compile
+        run: |
+          javac -d out $(find . -name "*.java")
+
+      - name: Run CLI Test
+        run: |
+          echo -e "CASH_IN 10000\nEXIT" | java -cp out Main

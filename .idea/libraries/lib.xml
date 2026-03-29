@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/primitive-payment-service/lib/apiguardian-api-1.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/primitive-payment-service/lib/junit-jupiter-engine-5.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/primitive-payment-service/lib/junit-platform-commons-1.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/primitive-payment-service/lib/junit-platform-engine-1.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/primitive-payment-service/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/primitive-payment-service/lib/junit-jupiter-5.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/primitive-payment-service/lib/opentest4j-1.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/primitive-payment-service/lib/junit-jupiter-params-5.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/primitive-payment-service/lib/junit-jupiter-api-5.14.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

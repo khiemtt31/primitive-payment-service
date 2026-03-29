@@ -24,7 +24,8 @@ jobs:
 
       - name: Compile
         run: |
-          javac -d out $(find . -name "*.java")
+          find . -name "*.java" ! -path "*test*" > sources.txt
+          javac -d out @sources.txt
 
       - name: Run CLI Test
         run: |
